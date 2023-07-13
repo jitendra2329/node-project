@@ -1,0 +1,9 @@
+In Akka, sharding refers to a technique used to distribute and manage actors across
+ multiple nodes in a cluster. 
+It allows you to scale out the processing capacity of an Akka application by distributing
+the workload among multiple actor instances running on different machines.
+
+The idea behind sharding is to partition the actor instances based on a key or identifier.
+Each shard represents a subset of the overall actor population, and each shard is responsible 
+for processing messages for a specific range or set of keys. By dividing the actors into smaller groups,
+you can achieve better scalability and parallelism.
